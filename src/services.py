@@ -71,7 +71,6 @@ class MovementService:
         departure = next((m for m in movements if m.event_type == "departure"), None)
         arrival = next((m for m in movements if m.event_type == "arrival"), None)
 
-
         return MovementResponse(
             movement_id=movement_id,
             product_id=movements[0].product_id,
